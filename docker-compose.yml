@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  database:
+    build:
+      context: ./db
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+    container_name: seven_eleven_db
+    tty: true
+    ports:
+      - "44500:44500"
