@@ -108,7 +108,7 @@ mysql> SELECT email, city FROM customer;
 ```
 
 ### Insertar varios registros a la vez
-[SQL](https://github.com/NeyderPinzon/db-mysql-docker/blob/master/sql/insert_some_customers.sql)
+[SQL](https://github.com/NeyderPinzon/db-mysql-docker/blob/master/sql/insert_many_customers.sql)
 ```bash
 mysql> INSERT INTO customer (
     ->   first_name,
