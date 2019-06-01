@@ -1,6 +1,10 @@
 # MySQL
 > Instrucciones Basicas
 
+Algunas instrucciones se pueden conseguir en el directorio `sql` de este repositorio.
+Sientete libre de copiar alguna y pegarla en el CLI de MySQL.
+Dichas instrucciones tienen links en los pasos que veras a continuacion.
+
 ### Cancelar una instruccion
 Podemos cancelar una instruccion de MySQL presionando `Ctrl C`
 
@@ -37,6 +41,7 @@ Database changed
 ```
 
 ### Crear una Tabla
+[SQL](https://github.com/NeyderPinzon/db-mysql-docker/blob/master/sql/create_table_customer.sql)
 ```bash
 mysql> CREATE TABLE customer (
     ->   id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -64,6 +69,7 @@ mysql> DESCRIBE customer;
 ```
 
 ### Insertar un registro en una tabla
+[SQL](https://github.com/NeyderPinzon/db-mysql-docker/blob/master/sql/insert_customer.sql)
 ```bash
 mysql> INSERT INTO customer (
     ->   first_name,
@@ -102,6 +108,7 @@ mysql> SELECT email, city FROM customer;
 ```
 
 ### Insertar varios registros a la vez
+[SQL](https://github.com/NeyderPinzon/db-mysql-docker/blob/master/sql/insert_some_customers.sql)
 ```bash
 mysql> INSERT INTO customer (
     ->   first_name,
